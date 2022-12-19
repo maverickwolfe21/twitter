@@ -37,6 +37,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   });
 
   const json = await result.json();
-
-  res.status(200).json({ message: "Added!" });
+  res.status(200).json(json);
 }
